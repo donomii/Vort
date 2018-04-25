@@ -6,9 +6,18 @@ Vort is a network filesystem, perfect for home and small office environments.
 
 Vort is quick, simple, and easy to setup and use.
 
-## Setup
+## Components
 
-Download [vort](release path here).  Double click to install, 
+Vort consists of several components:
+
+[hashare](https://github.com/donomii/hashare), the core library
+
+[vort-nfs](https://github.com/donomii/vort-nfs), the network server component
+
+[vort-winfs](https://github.com/donomii/vort-winfs), the native windows filesystem mounter, relies on dokany
+
+[vort-ftprelay](https://github.com/donomii/vort-ftprelay), a local ftp server that translates requests into the hashare protocol
+
 
 ## Use
 
