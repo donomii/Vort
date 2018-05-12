@@ -30,6 +30,8 @@ Vort can encrypt your file box, guaranteeing your privacy even if you lose your 
 
 # Use
 
+## Windows
+
 After installing, right click on your desktop, select "New item...", then "Vort".  A new Vort file will appear.  Double click on this to open and use it.  If you don't see a normal file browser window within a few seconds, find the FTP url in the Vort window, and paste that into your web browser.
 
 This file is a vort file store.  It is a portable file system, and works like a zip file, except it is easier to put files in, and take them out.
