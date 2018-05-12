@@ -2,9 +2,39 @@
 
 Vort is a network filesystem, perfect for home and small office environments.
 
+It is a secure, encrypted file store, that works over the network, or on your local machine.
+
+## Download
+
+Warning:  this is experimental software.  Do not use it for anything important.  Make backups often!
+
+[Windows](https://github.com/donomii/vort/releases/latest)
+
+[Linux](https://github.com/donomii/vort/releases/latest)
+
+[MacOSX](https://github.com/donomii/vort/releases/latest)
+
+## Your own digital safety box
+
+Keep your files securely on a USB key or in the cloud. 
+
+Vort can encrypt your file box, guaranteeing your privacy even if you lose your usb key.  Vort protects your privacy, preventing your cloud host or government agency from reading your files.
+
 ## Features
 
-Vort is quick, simple, and easy to setup and use.
+* Undelete
+* Compression
+* Encryption
+* Works well with sync programs like DropBox and CloudMe
+* Windows, Linux and MacOSX
+
+# Use
+
+After installing, right click on your desktop, select "New item...", then "Vort".  A new Vort file will appear.  Double click on this to open and use it.  If you don't see a normal file browser window within a few seconds, find the FTP url in the Vort window, and paste that into your web browser.
+
+This file is a vort file store.  It is a portable file system, and works like a zip file, except it is easier to put files in, and take them out.
+
+You can also serve this file to other people over the network, using vort-nfs.  This allows you to share network files without risk, since clients cannot escape the file store and access the rest of your computer.
 
 ## Components
 
@@ -23,11 +53,13 @@ Vort consists of several components:
 
 ### Server
 
-From the windows start menu, select "Vort-nfs", the Vort Network File server.  Vort server will start, and print out a url for contacting the server.  Use this url with the client, as descirbed below.
+From the windows start menu, select "Vort-nfs", the Vort Network File server.  Vort server will start, and print out a url for contacting the server.  Use this url with the client, as described below.
+
+This will create an empty vort file store in the default location, if one doesn't exist already.  To serve a file from a different location, you will have to use the command line.
 
 ### Client
 
-To connect to the server, open a command shell in the vort directory, and use the vort windows client, with the url from the server:
+To connect to the server, open a command shell, and use the vort windows client with the url from the server:
 
     vort-winfs.exe z:\ http://192.168.1.101/
 
