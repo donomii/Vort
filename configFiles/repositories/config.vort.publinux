@@ -1,0 +1,9 @@
+{
+	"Repository" :  "http://entirety.praeceptamachinae.com:83/",
+	"Token"     :  "defaultPassword",
+	"Username" : "defaultUsername",
+	"Password" : "defaultPassword",
+	"DisplayName": "VortFiles",
+	"MountPoint" : "/Users/jeremyprice/vortshare/pubshare/",
+	"SyncFolder" : "/Users/jeremyprice/personalSync/"
+}
