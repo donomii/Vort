@@ -1,4 +1,5 @@
 echo Starting complete vort build.
+mkdir build
 export GIT_TERMINAL_PROMPT=1
 set -x GIT_TERMINAL_PROMPT 1
 go get github.com/donomii/vort-fuse
