@@ -19,5 +19,3 @@ go get -u github.com/donomii/vort-pserver
 go build github.com/donomii/vort-pserver
 go get -u github.com/donomii/vort-ftprelay
 go build -o vort-ftprelay github.com/donomii/vort-ftprelay/vort/
-
-
