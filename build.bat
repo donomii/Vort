@@ -9,13 +9,13 @@ rm vort-ftprelay
 export GIT_TERMINAL_PROMPT=1
 set -x GIT_TERMINAL_PROMPT 1
 go clean
-go get -u github.com/donomii/vort-fuse
-go build github.com/donomii/vort-fuse
-go get -u github.com/donomii/vort-launcher
-go build github.com/donomii/vort-launcher
-go get -u github.com/donomii/vort-nfs
-go build github.com/donomii/vort-nfs
-go get -u github.com/donomii/vort-pserver
-go build github.com/donomii/vort-pserver
-go get -u github.com/donomii/vort-ftprelay
-go build -o vort-ftprelay github.com/donomii/vort-ftprelay/vort/
+#go get -u github.com/donomii/vort-fuse
+go build -a github.com/donomii/vort-fuse
+#go get -u github.com/donomii/vort-launcher
+go build -a github.com/donomii/vort-launcher
+#go get -u github.com/donomii/vort-nfs
+go build -a github.com/donomii/vort-nfs
+#go get -u github.com/donomii/vort-pserver
+go build -a github.com/donomii/vort-pserver
+#go get -u github.com/donomii/vort-ftprelay
+go build -a -o vort-ftprelay github.com/donomii/vort-ftprelay/vort/
