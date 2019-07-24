@@ -9,7 +9,7 @@ rm vort-ftprelay
 export GIT_TERMINAL_PROMPT=1
 set -x GIT_TERMINAL_PROMPT 1
 go clean
-set CPATH=C:\Program Files (x86)\WinFsp\inc\fuse
+set CPATH="C:\Program Files (x86)\WinFsp\inc\fuse"
 #go get -u github.com/donomii/vort-fuse
 go build -a github.com/donomii/vort-fuse
 #go get -u github.com/donomii/vort-launcher
