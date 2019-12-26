@@ -1,4 +1,6 @@
 echo Starting complete vort build.
+apt install libxcursor-dev libx11-dev libxinerama-dev libglfw3-dev libxinerama1 libxi-dev
+sudo apt install libxcursor-dev libx11-dev libxinerama-dev libglfw3-dev libxinerama1 libxi-dev
 mkdir build
 cd build
 rm vort-fuse
