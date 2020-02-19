@@ -16,6 +16,7 @@ for /f %%i in ('git log --oneline -n 1') do set COMM="%%i"
 set CPATH=C:\Program Files (x86)\WinFsp\inc\fuse
 go get -u github.com/donomii/vort-fuse
 go build -a -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" -a github.com/donomii/vort-fuse
+go build -a -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM% -X main.pclient=true" -a -o vort-pclient github.com/donomii/vort-fuse
 go get -u github.com/donomii/vort-launcher
 go build -a -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%"-a github.com/donomii/vort-launcher
 go get -u github.com/donomii/vort-synchronise
