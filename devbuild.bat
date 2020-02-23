@@ -17,6 +17,7 @@ set COMM="Development_build"
 set CPATH=C:\Program Files (x86)\WinFsp\inc\fuse
 go build -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" github.com/donomii/hashare/vortcmd
 go build -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" github.com/donomii/vort-fuse
+go build -a -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM% -X main.pclient=true" -o vort-pclient github.com/donomii/vort-fuse
 go build -gcflags "-l -N" -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" github.com/donomii/vort-launcher
 go build -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" github.com/donomii/vort-synchronise
 go build -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" github.com/donomii/vort-nfs
