@@ -1,0 +1,14 @@
+[Unit]
+Description=Personal Vort server
+After=network.target auditd.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=pi
+ExecStart=/home/pi/bin/vort-pserver
+
+[Install]
+WantedBy=multi-user.target
