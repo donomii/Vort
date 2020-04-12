@@ -11,7 +11,7 @@ rm vort-ftprelay
 export GIT_TERMINAL_PROMPT=1
 set -x GIT_TERMINAL_PROMPT 1
 go clean
-export BT=`date -Iseconds`
+export BT=`date "+%Y-%m-%d%H:%M:%S"`
 export COMM=`git rev-parse HEAD`
 go get -u github.com/donomii/vort-fuse
 go build -a -ldflags "-X main.buildTime=$BT -X main.commitHash=$COMM" -a github.com/donomii/vort-fuse 

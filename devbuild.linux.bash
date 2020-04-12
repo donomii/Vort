@@ -1,5 +1,5 @@
 echo Starting complete vort build.
-export go=go1.13.8
+export go=go
 mkdir build
 cd build
 rm vort-fuse
@@ -10,7 +10,7 @@ rm vort-pserver
 rm vort-ftprelay
 export GIT_TERMINAL_PROMPT=1
 $go clean
-export BT=`date -Iseconds`
+export BT=`date "+%Y-%m-%d%H:%M:%S"`
 export COMM=`git rev-parse HEAD`
 $go build -ldflags "-X main.buildTime=$BT -X main.commitHash=$COMM" github.com/donomii/vort-fuse
 $go build -ldflags "-X main.buildTime=$BT -X main.commitHash=$COMM -X main.pclient=true" -o vort-pclient github.com/donomii/vort-fuse
