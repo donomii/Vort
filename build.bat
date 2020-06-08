@@ -11,6 +11,7 @@ rm vort-ftprelay
 export GIT_TERMINAL_PROMPT=1
 set -x GIT_TERMINAL_PROMPT 1
 go clean
+go get github.com/pion/webrtc
 for /f %%i in ('date /T') do set BT="%%i"
 for /f %%i in ('git log --oneline -n 1') do set COMM="%%i"
 set CPATH=C:\Program Files (x86)\WinFsp\inc\fuse
