@@ -1,5 +1,6 @@
+#!/bin/bash
 echo Starting complete vort build.
-export go=go
+export go=go1.13.8
 mkdir build
 cd build
 rm vort-fuse
@@ -20,3 +21,6 @@ $go build -ldflags "-X main.buildTime=$BT -X main.commitHash=$COMM" github.com/d
 $go build -ldflags "-X main.buildTime=$BT -X main.commitHash=$COMM" github.com/donomii/vort-nfs
 $go build -ldflags "-X main.buildTime=$BT -X main.commitHash=$COMM" github.com/donomii/vort-pserver
 $go build -ldflags "-X main.buildTime=$BT -X main.commitHash=$COMM" -o vort-ftprelay github.com/donomii/vort-ftprelay/vort/
+pkill -f vort-pserver
+./vort-pserver &
+echo Devbuild complete
