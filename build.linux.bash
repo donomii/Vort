@@ -10,9 +10,11 @@ rm vort-pserver
 rm vort-ftprelay
 export GIT_TERMINAL_PROMPT=1
 set -x GIT_TERMINAL_PROMPT 1
+export go="go1.13.8"
 go clean
 export BT=`date "+%Y-%m-%d%H:%M:%S"`
 export COMM=`git rev-parse HEAD`
+go get -u github.com/donomii/goof
 go get -u github.com/donomii/vort-fuse
 go get -u github.com/donomii/vort-launcher
 go get -u github.com/donomii/vort-nfs

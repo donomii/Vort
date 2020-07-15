@@ -1,6 +1,6 @@
 #!/bin/bash
 echo Starting complete vort build.
-export go=go1.13.8
+export go="go1.13.8"
 mkdir build
 cd build
 rm vort-fuse
