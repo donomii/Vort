@@ -3,7 +3,7 @@ apt install libxcursor-dev libx11-dev libxinerama-dev libglfw3-dev libxinerama1 
 sudo apt install libxcursor-dev libx11-dev libxinerama-dev libglfw3-dev libxinerama1 libxi-dev
 mkdir build
 cd build
-rm vort-fuse vort-launcher vort-nfs vort-pclient vort-pserver vort-ftprelay vort-webbrelay vort-synchronise
+rm vort-fuse vort-launcher vort-nfs vort-pclient vort-pserver vort-ftprelay vort-webrelay vort-synchronise
 export GIT_TERMINAL_PROMPT=1
 set -x GIT_TERMINAL_PROMPT 1
 go clean
