@@ -9,6 +9,7 @@ rm vort-nfs
 rm vort-pserver
 rm vort-ftprelay
 export GIT_TERMINAL_PROMPT=1
+export GO111MODULE=off
 set -x GIT_TERMINAL_PROMPT 1
 export go="go1.13.8"
 go clean
