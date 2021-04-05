@@ -15,11 +15,11 @@ go clean
 for /f %%i in ('date /T') do set BT="%%i"
 set COMM="Development_build"
 set CPATH=C:\Program Files (x86)\WinFsp\inc\fuse
-go build -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" github.com/donomii/hashare/vortcmd
+REM go build -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" github.com/donomii/hashare/vortcmd
 go build -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" github.com/donomii/vort-fuse
 go build -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM% -X main.pclient=true" -o "vort-pclient.exe" github.com/donomii/vort-fuse
-go build -gcflags "-l -N" -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" github.com/donomii/vort-launcher
-go build -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" github.com/donomii/vort-synchronise
-go build -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" github.com/donomii/vort-nfs
+REM go build -gcflags "-l -N" -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" github.com/donomii/vort-launcher
+REM go build -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" github.com/donomii/vort-synchronise
+REM go build -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" github.com/donomii/vort-nfs
 go build -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" github.com/donomii/vort-pserver
-go build -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" -o vort-ftprelay.exe github.com/donomii/vort-ftprelay/vort/
+REM go build -ldflags "-X main.buildTime=%BT% -X main.commitHash=%COMM%" -o vort-ftprelay.exe github.com/donomii/vort-ftprelay/vort/
